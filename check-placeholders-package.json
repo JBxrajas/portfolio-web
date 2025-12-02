@@ -1,0 +1,9 @@
+{
+  "name": "check-placeholders",
+  "version": "1.0.0",
+  "description": "Script to check for placeholder values that need updating",
+  "main": "check-placeholders.js",
+  "scripts": {
+    "check": "node check-placeholders.js"
+  }
+}
