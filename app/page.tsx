@@ -90,7 +90,7 @@ export default function Home() {
                   Performance Testing
                 </h4>
                 <div className="flex flex-wrap gap-2">
-                  {['JMeter', 'LoadRunner', 'Neoload'].map((skill) => (
+                  {['k6', 'Grafana', 'JMeter', 'LoadRunner', 'Neoload'].map((skill) => (
                     <span key={skill} className="px-4 py-2 bg-green-50 text-green-700 rounded-lg text-sm font-medium hover:bg-green-100 transition-colors">
                       {skill}
                     </span>
