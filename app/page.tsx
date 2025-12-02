@@ -36,7 +36,7 @@ export default function Home() {
             </a>
             
             <a
-              href="https://www.linkedin.com/in/jesus-barajas-villegas/"
+              href="https://www.linkedin.com/in/jes%C3%BAs-barajas-villegas/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-700 rounded-xl hover:bg-slate-50 transition-all font-medium shadow-md hover:shadow-lg border border-slate-200 transform hover:-translate-y-0.5"
@@ -61,11 +61,12 @@ export default function Home() {
       </section>
 
       {/* Experience Section */}
-      <section className="py-16">
-        <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center animate-fade-in animate-delay-100">
-          Professional Experience
-        </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center animate-fade-in animate-delay-100">
+            Professional Experience
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
           {/* Skills */}
           <div className="bg-white rounded-2xl shadow-lg p-8 card-hover border border-slate-100 animate-slide-in-left animate-delay-200">
             <h3 className="text-2xl font-bold text-slate-900 mb-6">Technical Skills</h3>
@@ -156,11 +157,13 @@ export default function Home() {
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       {/* Education & Stats */}
-      <section className="py-16">
-        <div className="grid md:grid-cols-3 gap-8">
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white rounded-2xl shadow-lg p-8 card-hover border border-slate-100 animate-scale-in animate-delay-300">
             <div className="text-center mb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl mx-auto mb-4 flex items-center justify-center">
@@ -220,6 +223,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
     </div>
