@@ -1,59 +1,62 @@
 import Link from 'next/link';
+import Navigation from '@/components/Navigation';
 
 export default function Home() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
       {/* Hero Section */}
-      <section className="text-center py-20 animate-fade-in">
-        <div className="mb-6">
-          <h1 className="text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent mb-4">
-          Jesús Barajas Villegas
-        </h1>
-          <h2 className="text-3xl font-semibold text-slate-900 mb-6">
-          Senior QA Automation Tester
-        </h2>
-        </div>
-        <p className="text-xl text-slate-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Experienced automation and performance tester specializing in designing and implementing 
-          automated testing frameworks with Cypress, Playwright, and Selenium. Delivering high-quality 
-          software through CI/CD integration and comprehensive testing strategies.
-        </p>
-        <div className="flex flex-wrap gap-4 justify-center items-center mb-10 text-slate-600">
-          <a href="mailto:jbarajasvillegas@gmail.com" className="flex items-center gap-2 hover:text-blue-600 transition-colors">
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-            </svg>
-            jbarajasvillegas@gmail.com
-          </a>
-          <span className="text-slate-300">|</span>
-          <a href="tel:+526671382699" className="flex items-center gap-2 hover:text-blue-600 transition-colors">
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-            </svg>
-            +52 667 138 2699
-          </a>
-          <span className="text-slate-300">|</span>
-          <a href="https://www.linkedin.com/in/jesus-barajas-villegas/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-blue-600 transition-colors">
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clipRule="evenodd"></path>
-            </svg>
-            LinkedIn
-          </a>
-        </div>
-        <div className="flex flex-wrap gap-4 justify-center">
-          <Link
-            href="/automation"
-            className="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-          >
-            View Automation Projects →
-          </Link>
-          <Link
-            href="/performance"
-            className="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-xl hover:from-purple-700 hover:to-purple-800 transition-all font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-          >
-            View Performance Projects →
-          </Link>
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto text-center animate-fade-in">
+          <div className="mb-8 overflow-visible">
+            <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-4 leading-tight pb-2">
+              Jesús Barajas Villegas
+            </h1>
+            <p className="text-2xl md:text-3xl font-semibold text-slate-800 mb-6">
+              Senior QA Automation Tester
+            </p>
+          </div>
+          
+          <p className="text-lg md:text-xl text-slate-700 max-w-3xl mx-auto mb-10 leading-relaxed">
+            Experienced automation and performance tester specializing in designing and implementing 
+            automated testing frameworks with Cypress, Playwright, and Selenium. Delivering high-quality 
+            software through CI/CD integration and comprehensive testing strategies.
+          </p>
+
+          {/* Contact Buttons */}
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            <a
+              href="mailto:jbarajasvillegas@gmail.com"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+              </svg>
+              Email Me
+            </a>
+            
+            <a
+              href="https://www.linkedin.com/in/jesus-barajas-villegas/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-700 rounded-xl hover:bg-slate-50 transition-all font-medium shadow-md hover:shadow-lg border border-slate-200 transform hover:-translate-y-0.5"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clipRule="evenodd"></path>
+              </svg>
+              LinkedIn
+            </a>
+
+            <a
+              href="tel:+526671382699"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-700 rounded-xl hover:bg-slate-50 transition-all font-medium shadow-md hover:shadow-lg border border-slate-200 transform hover:-translate-y-0.5"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+              </svg>
+              +52 667 138 2699
+            </a>
+          </div>
         </div>
       </section>
 
